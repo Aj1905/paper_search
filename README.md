@@ -71,3 +71,8 @@ curl "https://<your-app>.vercel.app/api/notify?token=<CRON_SECRET>&period=weekly
 - 小さな Web UI（選択チェックボックス + ボタン）
 - 通知フォーマットの改善（著者や投票数の表示）
 - DB 保存（既送信の重複排除）
+
+## トラブルシュート
+
+- `conflict` や link エラーが出る場合は、`.vercel` を削除して `vercel link` を再実行してください。
+- GitHub Actions のデプロイが失敗する場合は、`VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID` の3つが正しく設定されているか確認してください。
