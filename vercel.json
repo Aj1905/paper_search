@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/*.js": {
+      "runtime": "@vercel/node@5.3.24"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron-daily?token=$CRON_SECRET",
+      "schedule": "0 0 * * *"
+    }
+  ]
+}

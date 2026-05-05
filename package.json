@@ -1,0 +1,13 @@
+{
+  "name": "paper_search",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check api/lib/*.js api/**/*.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "zod": "^3.23.8"
+  }
+}
