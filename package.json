@@ -8,6 +8,8 @@
     "vercel:pull": "vercel pull --yes --environment=production",
     "vercel:build": "vercel build --prod",
     "vercel:deploy": "vercel deploy --prebuilt --prod"
+    "vercel:deploy": "vercel deploy --prebuilt --prod",
+    "check": "node --check api/lib/*.js api/**/*.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0",
